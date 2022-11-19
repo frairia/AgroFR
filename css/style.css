@@ -454,6 +454,7 @@ footer .redes a img{
     .frasegiga h2{
         font-size: 28px;
     }
+    
 
 }
 @media screen and (max-width:500px){
@@ -462,6 +463,9 @@ footer .redes a img{
     }
     .fontmass{
         font-size: 17px;
+    }
+    footer .logopag h5{
+        font-size: 15px;
     }
 }
 @media screen and (max-width:500px){
