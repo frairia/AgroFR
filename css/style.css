@@ -1,18 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 /* #578c58 color */
 
 /*!------HEADER------*/
 header{
-    width: 200px;
+    width: 100%;
     height: 100px;
     background-color: rgb(255, 255, 255);
     position: fixed;
     top: 0%;
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,6 +42,12 @@ header nav ul{
 header nav ul li{
     margin: 5px 10px 5px 10px;
 }
+header nav{
+    background-color: white;
+}
+.fuenav{
+    font-family: 'Oswald';
+}
 /*!-------MAIN--------*/
 .frasegiga{
     width: 100%;
@@ -51,9 +58,12 @@ header nav ul li{
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: white;
-    font-size: large;
+}
+.frasegiga h2{
+    font-family: 'Oswald', sans-serif;
+    font-style: normals;
+    font-size: 35px;
 }
 .hero{
     text-align: center;
@@ -72,17 +82,18 @@ header nav ul li{
 .hero div h2{
     color: #393E41;
     font-size: 40px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 300;
     font-style: italic;
 }
 .textfrase{
-    width: 500px;
-    height: 300x;
+    width: 300px;
+    height: 300px;
     display: flex;
     flex-direction: column;
-    justify-items: center;
     justify-content: center;
+    align-items: flex-start;
+    margin-left: 100px;
+    margin-bottom: 20px;
 }
 .modulos h2{
     width: 100%;
@@ -108,8 +119,15 @@ header nav ul li{
     border-radius: 15px 15px;
     margin-top: 5px;
 }
+.modulos h2{
+    font-family: 'Oswald';
+    font-weight: bolder;
+    font-size: 35px;
+}
 .modulos .modulos-contenedor h3{
     margin-bottom: 10px;
+    font-family: 'Oswald';
+    font-size: 24px;
 }
 .modulos-contenedor div img{
     width: 88px;
@@ -166,7 +184,7 @@ header nav ul li{
     background-color: #f2f2f2;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 100px 200px 300px;
+    grid-template-rows: 100px 1fr 1fr;
     grid-template-areas: 
     "hache hache"
     "imagenes imagenes"
@@ -181,6 +199,10 @@ header nav ul li{
     justify-content: center;
     align-items: center;
 }
+.hache h2{
+    font-family: 'Oswald';
+    font-size: 35px;
+}
 .proveedores-contenedor{
     width: 100%;
     height: 100%;
@@ -191,15 +213,25 @@ header nav ul li{
     align-items: center;
     font-size: 20px;
 }
-
 .imagen2{
-    width: 480px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
+}
+.imaggen2{
+    width: 400px;
+    height: 271px;
+    margin-bottom: 20px;
 }
 .fontmass{
     width: 20%;
+    width: 300px;
     height: 100px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    font-family: 'Asap';
+    font-size: 20px;
+    color: #747474;
 }
 .textprove{
     grid-area: parrafo;
@@ -223,7 +255,6 @@ header nav ul li{
     bottom: 1%;
     right: 1%;
     background-color: #1C2321;
-    font-size: 16px;
     text-align: center;
     width: 150px;
     height: 150px;
@@ -233,9 +264,15 @@ header nav ul li{
 }
 .partedeabajo h6 a{
     color: rgb(26, 212, 35);
+    font-size: 10px;
 }
+.partedeabajo h5{
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+
 .partedeabajo div{
-    margin-top: 45px;
+    margin-top: 30px;
 }
 .rendimiento{
     background-color: #f2f2f2;
@@ -248,17 +285,29 @@ header nav ul li{
     text-transform: uppercase;
 }
 .equipo img{
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 80%;
 }
 .equipo{
     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    background-color: #f2f2f2;
+    gap: 30px;
+}
+.tractorr{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.tractorr h3 {
+    width: 100%;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    background-color: #f2f2f2;
-    font-size: 35px;
 }
 .contacto{
     width: 100%;
@@ -272,35 +321,37 @@ header nav ul li{
 }
 /*!-------FOOTER------*/
 footer{
-    height: 250px;
-    width: 100%;
     background-color: #363839;
 }
 footer .contenedor-footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-footer .logopag img{
-    width: 50%;
-    height: 30%;
-    margin-bottom: 20px;
+    width: 100%;
+    height: 250px;
 }
 footer .logopag{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    font-size: 20px;
+    font-size: 15px;
     color: #DDDDDD;
-    width: 20%;
-    font-family: Arial, Helvetica, sans-serif;
+}
+footer .logopag a{
+    width: 350px;
+    height: 123px;
+}
+footer .logopag h5{
+    margin-bottom: 0;
+    font-family: 'Asap';
 }
 footer a img{
-    width: 30px;
-    height: 30px;
+    width: 80%;
+    height: 80%;
 }
 footer ul{
+    height: 100%;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -310,9 +361,13 @@ footer ul li a{
     text-decoration: none;
     font-size: 18px;
     color: #DDDDDD;
+    font-family: 'Asap';
 }
 footer ul p{
     color: #DDDDDD;
+    margin-bottom: 0;
+    line-height: 20px;
+    font-family: 'Asap';
 }
 footer .redes{
     width: 150px;
@@ -331,10 +386,12 @@ footer .redes a img{
     background-color: #282a2b;
     color: #DDDDDD;
     font-size: small;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.COPYRIGHT p {
+    margin-bottom: 0;
 }
 
 /*!------------Medias Query------------*/
@@ -343,12 +400,11 @@ footer .redes a img{
     .frasegiga{
         text-align: center;
     }
-    
 }
 @media screen and (max-width:1155px) {
     .proveedores-grid {
         grid-template-columns: 1fr;
-        grid-template-rows: 100px 300px 470px;
+        grid-template-rows: 100px 1fr 1fr;
         grid-area: 
         "hache"
         "imagenes"
@@ -372,43 +428,56 @@ footer .redes a img{
         display: none;
     }
 }
-@media screen and (max-width:721px) {
-    .logopag h5 {
-        font-size: 11px;
-    }
-    .logopag a img {
-        width: 70%;
-        height: 40%;
-    }
-}
-@media screen and (max-width:580px) {
+@media screen and (max-width:792px){
     .enlacefoot {
         display: none;
     }
-    .contenedor-footer{
-        width: 100%;
-        height: 24vh;
-        display: flex;
+    footer .contenedor-footer{
         flex-direction: column;
-        padding-top: 30px;
+        height: 320px;
     }
-    .logopag a img {
-        width: 100px;
+    .logopag{
+        text-align: center;
+    }
+    .logopag h5{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .logopag img{
+        width: 80%;
         height: 100%;
     }
+    .frasegiga h2{
+        font-size: 28px;
+    }
+
 }
-@media screen and (max-width:560px) {
-    header {
-        display: flex;
-        flex-direction: column;
-        height: 150px;
+@media screen and (max-width:500px){
+    header nav {
+        display: none;
     }
-    header a img {
-        width: 80%;
-        height: 90%;
-        margin-left: 0px;
+    .fontmass{
+        font-size: 17px;
     }
-    header a {
-        height: 100px;
+}
+@media screen and (max-width:500px){
+    .textfrase{
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+    }
+}
+@media screen and (max-width:400px){
+    .imagen2{
+        width: 100%;
+        height: 100%;
+    }
+    .imaggen2{
+        width: 100%;
+        height: 80%;
     }
 }
