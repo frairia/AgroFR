@@ -484,4 +484,10 @@ footer .redes a img{
         width: 100%;
         height: 80%;
     }
+    .logopag a{
+        display: none;
+    } 
+    footer .redes{
+        height: 40px;
+    }
 }
