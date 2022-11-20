@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +9,7 @@
 /* #578c58 color */
 
 /*!------HEADER------*/
-header{
+header {
     width: 100%;
     height: 100px;
     background-color: rgb(255, 255, 255);
@@ -18,54 +19,64 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-.headerservi{
+
+.headerservi {
     position: sticky;
 }
-header nav ul li a{
+
+header nav ul li a {
     text-decoration: overline;
     color: black;
     font-size: large;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: flex;
 }
-header a img{
+
+header a img {
     width: 50%;
     height: 50%;
     margin-left: 20px;
 }
-header nav ul{
+
+header nav ul {
     list-style: none;
     text-align: center;
     display: flex;
     font-size: 20px;
 }
-header nav ul li{
+
+header nav ul li {
     margin: 5px 10px 5px 10px;
 }
-header nav{
+
+header nav {
     background-color: white;
 }
-.fuenav{
+
+.fuenav {
     font-family: 'Oswald';
 }
+
 /*!-------MAIN--------*/
-.frasegiga{
+.frasegiga {
     width: 100%;
     height: 170px;
-    background: rgb(6,168,96);
-    background: radial-gradient(circle, rgba(6,168,96,1) 0%, rgba(87,140,88,1) 100%);
+    background: rgb(6, 168, 96);
+    background: radial-gradient(circle, rgba(6, 168, 96, 1) 0%, rgba(87, 140, 88, 1) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
     color: white;
 }
-.frasegiga h2{
+
+.frasegiga h2 {
     font-family: 'Oswald', sans-serif;
     font-style: normals;
     font-size: 35px;
 }
-.hero{
+
+.hero {
     text-align: center;
     width: 100%;
     height: 65vh;
@@ -79,13 +90,15 @@ header nav{
     justify-content: center;
     align-items: flex-start;
 }
-.hero div h2{
+
+.hero div h2 {
     color: #393E41;
     font-size: 40px;
     font-weight: 300;
     font-style: italic;
 }
-.textfrase{
+
+.textfrase {
     width: 300px;
     height: 300px;
     display: flex;
@@ -95,7 +108,8 @@ header nav{
     margin-left: 100px;
     margin-bottom: 20px;
 }
-.modulos h2{
+
+.modulos h2 {
     width: 100%;
     height: 200px;
     text-align: center;
@@ -106,44 +120,52 @@ header nav{
     justify-content: center;
     align-items: center;
 }
-.modulos .modulos-contenedor{
+
+.modulos .modulos-contenedor {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-.modulos .modulos-contenedor a{
+
+.modulos .modulos-contenedor a {
     text-decoration: none;
     color: white;
-    background-color: rgba(0,0,0,0.22);
+    background-color: rgba(0, 0, 0, 0.22);
     padding: 6px;
     border-radius: 15px 15px;
     margin-top: 5px;
 }
-.modulos h2{
+
+.modulos h2 {
     font-family: 'Oswald';
     font-weight: bolder;
     font-size: 35px;
 }
-.modulos .modulos-contenedor h3{
+
+.modulos .modulos-contenedor h3 {
     margin-bottom: 10px;
     font-family: 'Oswald';
     font-size: 24px;
 }
-.modulos-contenedor div img{
+
+.modulos-contenedor div img {
     width: 88px;
     height: 80px;
 }
-.modulos-contenedor .achica img{
+
+.modulos-contenedor .achica img {
     width: 75px;
     height: 80px;
 }
-.modulos .modulos-contenedor div{
+
+.modulos .modulos-contenedor div {
     width: 150px;
     height: 200px;
     text-align: center;
     margin: 15px;
 }
-.productos h2{
+
+.productos h2 {
     width: 100%;
     height: 100px;
     text-align: center;
@@ -154,44 +176,50 @@ header nav{
     justify-content: center;
     align-items: center;
 }
-.productos .productos-contenedor{
+
+.productos .productos-contenedor {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-.productos .productos-contenedor a{
+
+.productos .productos-contenedor a {
     text-decoration: none;
     color: white;
     background-color: black;
     padding: 4px;
     border-radius: 15px 0;
 }
-.productos-contenedor div img{
+
+.productos-contenedor div img {
     width: 250px;
     height: 250px;
 }
-.productos .productos-contenedor div{
+
+.productos .productos-contenedor div {
     width: 250px;
     height: 320px;
     border: 1px solid black;
     text-align: center;
     margin: 15px;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
-.proveedores-grid{
+
+.proveedores-grid {
     background-color: #f2f2f2;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 100px 1fr 1fr;
-    grid-template-areas: 
-    "hache hache"
-    "imagenes imagenes"
-    "parrafo parrafo"
+    grid-template-areas:
+        "hache hache"
+        "imagenes imagenes"
+        "parrafo parrafo"
     ;
 }
-.hache{
+
+.hache {
     width: 100%;
     height: 100px;
     grid-area: hache;
@@ -199,11 +227,13 @@ header nav{
     justify-content: center;
     align-items: center;
 }
-.hache h2{
+
+.hache h2 {
     font-family: 'Oswald';
     font-size: 35px;
 }
-.proveedores-contenedor{
+
+.proveedores-contenedor {
     width: 100%;
     height: 100%;
     grid-area: imagenes;
@@ -213,16 +243,19 @@ header nav{
     align-items: center;
     font-size: 20px;
 }
-.imagen2{
+
+.imagen2 {
     width: 400px;
     height: 400px;
 }
-.imaggen2{
+
+.imaggen2 {
     width: 400px;
     height: 271px;
     margin-bottom: 20px;
 }
-.fontmass{
+
+.fontmass {
     width: 20%;
     width: 300px;
     height: 100px;
@@ -233,7 +266,8 @@ header nav{
     font-size: 20px;
     color: #747474;
 }
-.textprove{
+
+.textprove {
     grid-area: parrafo;
     width: 100%;
     height: 100%;
@@ -243,14 +277,16 @@ header nav{
     align-items: center;
     font-size: 20px;
 }
-.sima{
+
+.sima {
     width: 100%;
     height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.partedeabajo{
+
+.partedeabajo {
     position: fixed;
     bottom: 1%;
     right: 1%;
@@ -262,19 +298,22 @@ header nav{
     border-radius: 100%;
     color: white;
 }
-.partedeabajo h6 a{
+
+.partedeabajo h6 a {
     color: rgb(26, 212, 35);
     font-size: 10px;
 }
-.partedeabajo h5{
+
+.partedeabajo h5 {
     font-size: 12px;
     margin-bottom: 0px;
 }
 
-.partedeabajo div{
+.partedeabajo div {
     margin-top: 30px;
 }
-.rendimiento{
+
+.rendimiento {
     background-color: #f2f2f2;
     width: 100%;
     display: flex;
@@ -284,53 +323,89 @@ header nav{
     flex-direction: column;
     text-transform: uppercase;
 }
-.equipo img{
+
+.contacto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contacto-back {
+    background-color: #f2f2f2;
+}
+
+/*!-------EQUIPO-----*/
+.heroequipo{
+    width: 100%;
+    height: 222px;
+    background-image: url(../img/head-aplicaciones.jpg);
+    background-attachment: local;
+}
+.heroequipo h3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Oswald';
+    font-weight: 100;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
+}
+
+.equipo img {
     width: 100%;
     height: 80%;
 }
-.equipo{
+
+.equipo {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px 1fr 1fr 1fr;
     background-color: #f2f2f2;
     gap: 30px;
+    grid-template-areas: 
+    "encabezado encabezado encabezado"
+    "tractorr tractorr tractorr"
+    "fumigadora cosechadora cosechadora"
+    ;
 }
-.tractorr{
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-}
-.tractorr h3 {
+.encabezado{
     width: 100%;
-    height: 70px;
+    grid-area: encabezado;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.contacto{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.tractorr {
+    grid-area: tractorr;
 }
-.contacto-back{
-    background-color: #f2f2f2;
+.fumigadora{
+    grid-area: fumigadora;
 }
+.targeta-cosechadora{
+    grid-area: cosechadora;
+}
+
 /*!-------FOOTER------*/
-footer{
+footer {
     background-color: #363839;
 }
-footer .contenedor-footer{
+
+footer .contenedor-footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
     height: 250px;
 }
-footer .logopag{
+
+footer .logopag {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -338,38 +413,45 @@ footer .logopag{
     font-size: 15px;
     color: #DDDDDD;
 }
-footer .logopag a{
+
+footer .logopag a {
     width: 350px;
     height: 123px;
 }
-footer .logopag h5{
+
+footer .logopag h5 {
     margin-bottom: 0;
     font-family: 'Asap';
 }
-footer a img{
+
+footer a img {
     width: 80%;
     height: 80%;
 }
-footer ul{
+
+footer ul {
     height: 100%;
     list-style: none;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-footer ul li a{
+
+footer ul li a {
     text-decoration: none;
     font-size: 18px;
     color: #DDDDDD;
     font-family: 'Asap';
 }
-footer ul p{
+
+footer ul p {
     color: #DDDDDD;
     margin-bottom: 0;
     line-height: 20px;
     font-family: 'Asap';
 }
-footer .redes{
+
+footer .redes {
     width: 150px;
     height: 160px;
     display: flex;
@@ -377,10 +459,12 @@ footer .redes{
     align-items: flex-end;
     margin: 30px;
 }
-footer .redes a img{
+
+footer .redes a img {
     margin: 8px;
 }
-.COPYRIGHT{
+
+.COPYRIGHT {
     width: 100%;
     height: 50px;
     background-color: #282a2b;
@@ -390,6 +474,7 @@ footer .redes a img{
     justify-content: center;
     align-items: center;
 }
+
 .COPYRIGHT p {
     margin-bottom: 0;
 }
@@ -397,49 +482,61 @@ footer .redes a img{
 /*!------------Medias Query------------*/
 
 @media screen and (max-width:1030px) {
-    .frasegiga{
+    .frasegiga {
         text-align: center;
     }
 }
+
 @media screen and (max-width:1155px) {
     .proveedores-grid {
         grid-template-columns: 1fr;
         grid-template-rows: 100px 1fr 1fr;
-        grid-area: 
-        "hache"
-        "imagenes"
-        "parrafo"
+        grid-area:
+            "hache"
+            "imagenes"
+            "parrafo"
         ;
     }
+
     .proveedores-contenedor {
         display: flex;
         flex-direction: column;
     }
+
     .textprove {
         display: flex;
         flex-direction: column;
     }
-    .fontmass{
+
+    .fontmass {
         width: 70%;
         height: 200px;
         text-align: center;
     }
+
     .partedeabajo {
         display: none;
     }
 }
-@media screen and (max-width:792px){
+
+@media screen and (max-width:792px) {
     .enlacefoot {
         display: none;
     }
-    footer .contenedor-footer{
+
+    footer .contenedor-footer {
         flex-direction: column;
-        height: 320px;
+        height: 100%;
     }
-    .logopag{
+    footer .redes{
+        height: 30px;
+    }
+
+    .logopag {
         text-align: center;
     }
-    .logopag h5{
+
+    .logopag h5 {
         width: 100%;
         height: 100%;
         display: flex;
@@ -447,47 +544,57 @@ footer .redes a img{
         justify-content: center;
         text-align: center;
     }
-    .logopag img{
+
+    .logopag img {
         width: 80%;
         height: 100%;
     }
-    .frasegiga h2{
+
+    .frasegiga h2 {
         font-size: 28px;
     }
-    
+
 
 }
-@media screen and (max-width:500px){
+
+@media screen and (max-width:500px) {
     header nav {
         display: none;
     }
-    .fontmass{
+
+    .fontmass {
         font-size: 17px;
     }
-    footer .logopag h5{
+
+    footer .logopag h5 {
         font-size: 15px;
     }
 }
-@media screen and (max-width:500px){
-    .textfrase{
+
+@media screen and (max-width:500px) {
+    .textfrase {
         justify-content: center;
         align-items: center;
         margin-left: 0;
     }
 }
-@media screen and (max-width:400px){
-    .imagen2{
+
+@media screen and (max-width:400px) {
+    .imagen2 {
         width: 100%;
         height: 100%;
     }
-    .imaggen2{
+
+    .imaggen2 {
         width: 100%;
         height: 80%;
     }
-    .logopag a img{
+
+    .logopag a img {
         display: none;
-    } 
-    footer .redes{
+    }
+
+    footer .redes {
         height: 40px;
     }
 }
