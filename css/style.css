@@ -13,15 +13,11 @@ header {
     width: 100%;
     height: 100px;
     background-color: rgb(255, 255, 255);
-    position: fixed;
+    position: static;
     top: 0%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.headerservi {
-    position: sticky;
 }
 
 header nav ul li a {
@@ -337,13 +333,14 @@ header nav {
 }
 
 /*!-------EQUIPO-----*/
-.heroequipo{
+.heroequipo {
     width: 100%;
     height: 222px;
     background-image: url(../img/head-aplicaciones.jpg);
     background-attachment: local;
 }
-.heroequipo h3{
+
+.heroequipo h3 {
     width: 100%;
     height: 100%;
     display: flex;
@@ -357,40 +354,81 @@ header nav {
     text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
 }
 
-.equipo img {
-    width: 100%;
-    height: 80%;
-}
-
 .equipo {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 200px 1fr 1fr 1fr;
+    grid-template-rows: 1fr 100px 0.5fr 100px 1fr;
     background-color: #f2f2f2;
-    gap: 30px;
-    grid-template-areas: 
-    "encabezado encabezado encabezado"
-    "tractorr tractorr tractorr"
-    "fumigadora cosechadora cosechadora"
+    grid-template-areas:
+        "tractorr tractorr tractorr"
+        "operarios operarios operarios"
+        "fumigadora fumigadora fumigadora"
+        "entre entre entre"
+        "cosechadora cosechadora cosechadora"
     ;
 }
-.encabezado{
-    width: 100%;
-    grid-area: encabezado;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.encabezado h2 {
+    font-size: 25px;
 }
+
+.bi {
+    font-size: 2em;
+}
+
+.operarios {
+    grid-area: operarios;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(../img/head-servicios.jpg);
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+
+.entre {
+    grid-area: entre;
+    background-image: url(../img/head-servicios.jpg);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+}
+
 .tractorr {
     grid-area: tractorr;
+    padding: 50px;
 }
-.fumigadora{
+
+.fumigadora {
     grid-area: fumigadora;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-.targeta-cosechadora{
+
+.targeta-cosechadora {
     grid-area: cosechadora;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
+
+.primera3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.segunda3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
 
 /*!-------FOOTER------*/
 footer {
@@ -519,6 +557,40 @@ footer .redes a img {
     }
 }
 
+@media screen and (max-width:1084px) {
+    .fumigadora {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width:957px) {
+    .primera3 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .segunda3 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .paddi {
+        margin-bottom: 20px;
+    }
+
+    .targeta-cosechadora {
+        flex-direction: row;
+    }
+
+    .equipo {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 0.5fr 100px 0.5fr 100px 1fr;
+    }
+}
+
 @media screen and (max-width:792px) {
     .enlacefoot {
         display: none;
@@ -528,7 +600,8 @@ footer .redes a img {
         flex-direction: column;
         height: 100%;
     }
-    footer .redes{
+
+    footer .redes {
         height: 30px;
     }
 
@@ -557,6 +630,26 @@ footer .redes a img {
 
 }
 
+@media screen and (max-width:769px) {
+    .equipo {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 0.5fr 100px 0.7fr 100px 0.5fr;
+    }
+}
+
+@media screen and (max-width:668px) {
+    .targeta-cosechadora {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:533px){
+    .equipo {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 0.5fr 100px 0.4fr 100px 0.5fr;
+    }
+}
+
 @media screen and (max-width:500px) {
     header nav {
         display: none;
@@ -569,13 +662,13 @@ footer .redes a img {
     footer .logopag h5 {
         font-size: 15px;
     }
-}
-
-@media screen and (max-width:500px) {
     .textfrase {
         justify-content: center;
         align-items: center;
         margin-left: 0;
+    }
+    .tractorr{
+        padding: 20px;
     }
 }
 
@@ -588,10 +681,6 @@ footer .redes a img {
     .imaggen2 {
         width: 100%;
         height: 80%;
-    }
-
-    .logopag a img {
-        display: none;
     }
 
     footer .redes {
