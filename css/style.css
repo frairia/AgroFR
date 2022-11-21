@@ -9,48 +9,65 @@
 /* #578c58 color */
 
 /*!------HEADER------*/
-header {
+nav {
     width: 100%;
     height: 100px;
-    background-color: rgb(255, 255, 255);
-    position: static;
-    top: 0%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header nav ul li a {
-    text-decoration: overline;
-    color: black;
-    font-size: large;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    display: flex;
-}
-
-header a img {
-    width: 50%;
-    height: 50%;
-    margin-left: 20px;
-}
-
-header nav ul {
-    list-style: none;
-    text-align: center;
-    display: flex;
-    font-size: 20px;
-}
-
-header nav ul li {
-    margin: 5px 10px 5px 10px;
-}
-
-header nav {
     background-color: white;
+    position: fixed;
 }
 
-.fuenav {
-    font-family: 'Oswald';
+.posifi{
+    position: sticky;
+}
+
+.enlacee {
+    position: absolute;
+    padding: 20px 40px;
+}
+
+.logooo {
+    height: 60px;
+}
+
+nav ul {
+    float: right;
+    margin: 10px 40px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 18px;
+    padding: 3px 13px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+li a:active,
+li a:hover {
+    background-color: rgba(87, 140, 88, 1);
+    transition: 1.5s;
+    color: black;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 100px;
+    margin-right: 40px;
+    display: none;
+}
+
+#check {
+    display: none;
 }
 
 /*!-------MAIN--------*/
@@ -64,6 +81,7 @@ header nav {
     align-items: center;
     text-transform: uppercase;
     color: white;
+    text-align: center;
 }
 
 .frasegiga h2 {
@@ -519,16 +537,23 @@ footer .redes a img {
 
 /*!------------Medias Query------------*/
 
-@media screen and (max-width:1030px) {
-    .frasegiga {
-        text-align: center;
+@media screen and (max-width:1155px) {
+    .partedeabajo {
+        display: none;
     }
 }
 
-@media screen and (max-width:1155px) {
+@media screen and (max-width:1084px) {
+    .fumigadora {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width:957px) {
     .proveedores-grid {
         grid-template-columns: 1fr;
-        grid-template-rows: 100px 1fr 1fr;
+        grid-template-rows: 100px 0.8fr 1fr;
         grid-area:
             "hache"
             "imagenes"
@@ -552,19 +577,6 @@ footer .redes a img {
         text-align: center;
     }
 
-    .partedeabajo {
-        display: none;
-    }
-}
-
-@media screen and (max-width:1084px) {
-    .fumigadora {
-        flex-direction: column;
-    }
-
-}
-
-@media screen and (max-width:957px) {
     .primera3 {
         flex-direction: column;
         justify-content: center;
@@ -588,6 +600,46 @@ footer .redes a img {
     .equipo {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 0.5fr 100px 0.5fr 100px 1fr;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 45vh;
+        background-color: #393e41fa;
+        top: 100px;
+        left: -100%;
+        text-align: center;
+        transition: all 1s;
+        padding: 0;
+    }
+
+    nav ul {
+        margin: 0 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    li a:hover,
+    li a:active {
+        background: none;
+        color: rgba(87, 140, 88, 1);
+    }
+
+    #check:checked~ul {
+        left: 0;
     }
 }
 
@@ -643,7 +695,7 @@ footer .redes a img {
     }
 }
 
-@media screen and (max-width:533px){
+@media screen and (max-width:533px) {
     .equipo {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 0.5fr 100px 0.4fr 100px 0.5fr;
@@ -651,9 +703,6 @@ footer .redes a img {
 }
 
 @media screen and (max-width:500px) {
-    header nav {
-        display: none;
-    }
 
     .fontmass {
         font-size: 17px;
@@ -662,13 +711,18 @@ footer .redes a img {
     footer .logopag h5 {
         font-size: 15px;
     }
+
     .textfrase {
         justify-content: center;
         align-items: center;
         margin-left: 0;
     }
-    .tractorr{
+
+    .tractorr {
         padding: 20px;
+    }
+    .enlacee{
+        padding: 20px 20px;
     }
 }
 
@@ -685,5 +739,8 @@ footer .redes a img {
 
     footer .redes {
         height: 40px;
+    }
+    .logooo{
+        height: 50px;
     }
 }
