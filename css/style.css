@@ -14,9 +14,10 @@ nav {
     height: 100px;
     background-color: white;
     position: fixed;
+    z-index: 1;
 }
 
-.posifi{
+.posifi {
     position: sticky;
 }
 
@@ -721,7 +722,8 @@ footer .redes a img {
     .tractorr {
         padding: 20px;
     }
-    .enlacee{
+
+    .enlacee {
         padding: 20px 20px;
     }
 }
@@ -740,7 +742,8 @@ footer .redes a img {
     footer .redes {
         height: 40px;
     }
-    .logooo{
+
+    .logooo {
         height: 50px;
     }
 }
