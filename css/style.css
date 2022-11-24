@@ -513,14 +513,14 @@ li a:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-image: url(../img/head-servicios.jpg);
+    background-image: url(../img/head-laempresa.jpg);
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
 }
 
 .entre {
     grid-area: entre;
-    background-image: url(../img/head-servicios.jpg);
+    background-image: url(../img/head-laempresa.jpg);
     display: flex;
     justify-content: space-around;
     align-items: center;
