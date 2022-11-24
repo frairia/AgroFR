@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,200&family=Oswald:wght@500&family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,300;1,200&family=Oswald:wght@500&family=Roboto:wght@300;400;700&display=swap');
 
 * {
     margin: 0;
@@ -284,17 +284,6 @@ li a:hover {
 
 .partedeabajo div {
     margin-top: 30px;
-}
-
-.rendimiento {
-    background-color: #f2f2f2;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 55px;
-    flex-direction: column;
-    text-transform: uppercase;
 }
 
 
@@ -594,6 +583,53 @@ li a:hover {
     text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
 }
 
+.herotraye {
+    margin-top: 20px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.herotraye h3 {
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.5;
+    font-family: 'Oswald', sans-serif;
+}
+
+.contein-trayectoria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carro{
+    width: 60%;
+    height: 50%;
+}
+
+.contein_completo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.contenedor_grip{
+    width: 60%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contenedor_info{
+    width: 50%;
+    font-family: 'Asap', sans-serif;
+    font-size: 20px;
+    padding: 20px;
+}
+
 /*!-------CONTACTO-----*/
 
 .herocontacto {
@@ -632,7 +668,8 @@ li a:hover {
     border-bottom: 1px solid rgb(0, 0, 0);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    background-color: #f2f2f2;
 }
 
 .head-cont h4 {
@@ -648,24 +685,28 @@ li a:hover {
 .text-cont{
     grid-area: text-cont;
     background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .text-56{
-    width: 100%;
+    width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    margin: auto; 
 }
 
 .text-56 h5{
+    margin-left: 40px;
     font-family: 'Asap', sans-serif;
     font-weight: 700;
 }
 
 .text-56 h6{
+    margin-left: 40px;
     color: #6a6a6a;
     font-family: 'Asap', sans-serif;
     font-weight: 400;
