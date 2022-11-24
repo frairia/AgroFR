@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>AgroFR 🌾</title>
 </head>
+
 <body>
     <header>
         <nav class="posifi">
@@ -28,71 +30,68 @@
             </ul>
         </nav>
     </header>
-    <main class="contacto-back">
-        <section class="contacto">
-            <h1>¡Regristrate! (Pagina en mantenimiento)</h1>
-            <form action="" method="" enctype="">
-                <div>
-                    <label for="Nombre">Nombre:</label>
-                    <input type="text" name="Nombre" placeholder="Escribi tu nombre">
-                </div>
-                <div>
-                    <label for="Email">Email:</label>
-                    <input type="email" name="Email" placeholder="Escribi tu Email">
-                </div>
-                <div>
-                    <label for="Numero">Numero de telefono:</label>
-                    <input type="number" name="Numero" placeholder="Numero de telefono">
-                </div>
-                <div>
-                    <label for="Constraseniaa">Constraseña</label>
-                    <input type="password" name="Contrasenia">
-                </div>
-                <div>
-                    <h2>GENERO</h2>
-                    <label for="mascu">Masculino</label>
-                    <input type="radio" name="mascu">
-                </div>
-                <div>
-                    <label for="feme">Femenino</label>
-                    <input type="radio" name="feme">
-                </div>
-                <div>
-                    <label for="otro">Otro</label>
-                    <input type="radio" name="otro">
-                </div>
-                <select name="select" id="">
-                    <option value="">Argentina</option>
-                    <option value="">Colombia</option>
-                </select>
-                <div>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                </div>
-            </form>
-        </section>
+    <main>
         <section>
-            <table>
-                <thead> <!-- !Header de la tabla-->
-                    <tr> <!--?FILA-->
-                        <th>Nombre</th> <!--?COLUMNA-->
-                        <th>Apellido</th>
-                        <th>DNI</th>
-                    </tr>
-                </thead>
-                <tbody> <!-- !Cuerpo de la tabla-->
-                    <tr> <!--?FILA-->
-                        <th>Facundo</th> <!--?COLUMNA-->
-                        <th>Frairia</th>
-                        <th>43365648</th>
-                    </tr>
-                </tbody>
-                <tfoot> <!-- !Pie de la tabla-->
-                </tfoot>
-            </table>
+            <div class="herocontacto">
+                <h3>CONTACTO</h3>
+            </div>
         </section>
-        <section>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13618.729898799334!2d-64.18331629999999!3d-31.422873349999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28e5b9d7fe5%3A0x284de6f3d7b8a60!2sMuseo%20Superior%20de%20Bellas%20Artes%20%7C%20Palacio%20Ferreyra!5e0!3m2!1ses-419!2sar!4v1666105201651!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section class="contain-contactos">
+            <div class="head-cont">
+                <h4>Complete el formulario para comunicarse con nosotros y le responderemos lo antes posible.</h4>
+            </div>
+            <div class="text-cont">
+                <div class="text-56">
+                    <h5>CASA CENTRAL
+                        NUEVA CORDOBA</h5>
+                        <h6>Av. Pueyrredon 60
+                        (Ruta 8 KM 370)</h6>
+        
+                        <h5>VENTAS</h5>
+                        <h6>0800 123 3232</h6>
+        
+                        <h5>URGENCIAS</h5>
+                        <h6>0800 555 5555</h6>
+        
+                        <h5>EMAIL</h5>
+                        <h6>AgroFR@gmail.COM</h6> 
+                </div>
+                
+            </div>
+            <div class="form-cont">
+                <form class="form">
+                    <h2 class="form_title">CONTACTO</h2>
+                    <p class="form_paragraph">O puedes enviarnos un<a href="#" class="form_link"> Whatsapp</a></p>
+                    <div class="form_container">
+                        <div class="form_group">
+                            <input type="text" id="name" class="form_input" placeholder=" ">
+                            <label for="name" class="form_label">Nombre:</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="user" class="form_input" placeholder=" ">
+                            <label for="user" class="form_label">Apellido:</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="email" class="form_input" placeholder=" ">
+                            <label for="email" class="form_label">Email:</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" id="email" class="form_input" placeholder=" ">
+                            <label for="email" class="form_label">Consulta</label>
+                            <span class="form_line"></span>
+                        </div>
+                        <input type="submit" class="form_submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
         </section>
+
+
+
+
     </main>
     <footer>
         <div class="contenedor-footer">
@@ -131,4 +130,5 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,200&family=Oswald:wght@500&family=Roboto:wght@300;400;700&display=swap');
 
 * {
     margin: 0;
@@ -180,48 +180,6 @@ li a:hover {
     margin: 15px;
 }
 
-.productos h2 {
-    width: 100%;
-    height: 100px;
-    text-align: center;
-    background-color: #333333;
-    color: white;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.productos .productos-contenedor {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.productos .productos-contenedor a {
-    text-decoration: none;
-    color: white;
-    background-color: black;
-    padding: 4px;
-    border-radius: 15px 0;
-}
-
-.productos-contenedor div img {
-    width: 250px;
-    height: 250px;
-}
-
-.productos .productos-contenedor div {
-    width: 250px;
-    height: 320px;
-    border: 1px solid black;
-    text-align: center;
-    margin: 15px;
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-}
-
 .proveedores-grid {
     background-color: #f2f2f2;
     display: grid;
@@ -295,15 +253,15 @@ li a:hover {
 
 .sima {
     width: 100%;
-    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #f2f2f2;
 }
 
 .partedeabajo {
     position: fixed;
-    bottom: 1%;
+    bottom: 1.5%;
     right: 1%;
     background-color: #1C2321;
     text-align: center;
@@ -339,23 +297,170 @@ li a:hover {
     text-transform: uppercase;
 }
 
-.contacto {
+
+/*!-------SERVICIOS-----*/
+
+.heroservicio {
     width: 100%;
+    height: 222px;
+    background-image: url(../img/head-servicio.jpg);
+    background-attachment: local;
+}
+
+.heroservicio h3 {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    font-size: 30px;
+    font-family: 'Oswald';
+    font-weight: 100;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
 }
 
-.contacto-back {
+
+.productos-contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px 1fr 80px 1fr;
+    grid-template-areas:
+        "topp topp topp"
+        "productos productos productos"
+        "top2 top2 top2"
+        "descripcion descripcion descripcion"
+    ;
+}
+
+.top {
+    grid-area: topp;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.top h4 {
+    margin-left: 50px;
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.5;
+}
+
+.top2 {
+    grid-area: top2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.top2 h4 {
+    margin-left: 50px;
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.5;
+}
+
+.productos {
+    grid-area: productos;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descripcion {
+    grid-area: descripcion;
+    display: flex;
+}
+
+.descripcion .descripcion2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 40px;
     background-color: #f2f2f2;
+}
+
+.descripcion .descripcion2 h4 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+}
+
+.descripcion .descripcion2 p {
+    font-family: 'Asap', sans-serif;
+    font-size: 20px;
+}
+
+.contain {
+    width: 100%;
+    display: flex;
+    max-width: 1500px;
+    margin: auto;
+    padding: 30px;
+}
+
+.tarjeta {
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #f2f2f2;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.tarjeta:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 300px;
+}
+
+.tarjeta .contenido {
+    padding: 15px;
+    text-align: center;
+}
+
+.tarjeta .contenido p {
+    line-height: 1.5;
+    color: #6a6a6a;
+}
+
+.tarjeta .contenido h3 {
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.tarjeta .contenido a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid rgba(87, 140, 88, 1);
+    border-radius: 4px;
+    color: rgba(87, 140, 88, 1);
+    transition: all 400ms ease;
+}
+
+.tarjeta .contenido a:hover {
+    background: rgba(87, 140, 88, 1);
+    color: white;
 }
 
 /*!-------EQUIPO-----*/
 .heroequipo {
     width: 100%;
     height: 222px;
-    background-image: url(../img/head-aplicaciones.jpg);
+    background-image: url(../img/head-flota.jpg);
     background-attachment: local;
 }
 
@@ -373,6 +478,14 @@ li a:hover {
     text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
 }
 
+.fon {
+    font-family: 'Asap', sans-serif;
+}
+
+.fon2 {
+    font-family: 'Oswald', sans-serif;
+}
+
 .equipo {
     width: 100%;
     display: grid;
@@ -386,6 +499,16 @@ li a:hover {
         "entre entre entre"
         "cosechadora cosechadora cosechadora"
     ;
+}
+
+.transit:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.transit {
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease;
 }
 
 .encabezado h2 {
@@ -448,6 +571,217 @@ li a:hover {
     margin-top: 20px;
 }
 
+/*!-------TRAYECTORIA-----*/
+
+.herotrayectoria {
+    width: 100%;
+    height: 222px;
+    background-image: url(../img/head-laempresa.jpg);
+    background-attachment: local;
+}
+
+.herotrayectoria h3 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Oswald';
+    font-weight: 100;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
+}
+
+/*!-------CONTACTO-----*/
+
+.herocontacto {
+    width: 100%;
+    height: 222px;
+    background-image: url(../img/head-contacto.jpg);
+    background-attachment: local;
+}
+
+.herocontacto h3 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Oswald';
+    font-weight: 100;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
+}
+
+.contain-contactos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px 900px;
+    grid-template-areas: 
+    "head-cont head-cont"
+    "text-cont form-cont"
+    ;
+}
+
+.head-cont {
+    grid-area: head-cont;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.head-cont h4 {
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.text-cont{
+    grid-area: text-cont;
+    background-color: #f2f2f2;
+}
+
+.text-56{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.text-56 h5{
+    font-family: 'Asap', sans-serif;
+    font-weight: 700;
+}
+
+.text-56 h6{
+    color: #6a6a6a;
+    font-family: 'Asap', sans-serif;
+    font-weight: 400;
+}
+
+.form-cont{
+    grid-area: form-cont;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.form{
+    background-color: white;
+    width: 90%;
+    height: 70%;
+    max-width: 400px;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+    text-align: center;
+}
+
+.form_title{
+    font-size: 2rem;
+    margin-bottom: .5em;
+}
+
+.form_paragraph{
+    font-weight: 300;
+}
+
+.form_link{
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+}
+
+.form_container{
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+}
+
+.form_group{
+    position: relative;
+    --color: #5757577e;
+}
+
+.form_input{
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+    font-family: 'Roboto', sans-serif;
+}
+
+.form_input:not(:placeholder-shown){
+    color: #4d4646;
+}
+
+.form_input:focus + .form_label,
+.form_input:not(:placeholder-shown) + .form_label{
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: rgba(87, 140, 88, 1);
+}
+
+.form_label{
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+
+.form_submit{
+    background: rgba(87, 140, 88, 1);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+}
+
+.form_line{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(87, 140, 88, 1);
+    transform: scale(0);
+    transform: left bottom;
+    transition: transform .4s;
+}
+
+.form_input:focus ~ .form_line,
+.form_input:not(:placeholder-shown) ~ .form_line{
+    transform: scale(1);
+}
+
+@media (max-width:425px){
+    .form_title{
+        font-size: 1.8rem;
+    }
+}
 
 /*!-------FOOTER------*/
 footer {
