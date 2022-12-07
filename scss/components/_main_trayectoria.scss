@@ -1,0 +1,56 @@
+section{
+    .herotrayectoria{
+        width: 100%;
+        height: 222px;
+        background-image: url(../img/head-laempresa.jpg);
+        background-attachment: local;
+        h3{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            font-family: 'Oswald';
+            font-weight: 100;
+            color: white;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
+                }
+    }
+}
+.sectitra{
+    .herotraye{
+        margin-top: 20px;
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        h3{
+            font-family: 'Oswald', sans-serif;
+            line-height: 1.5;
+            font-family: 'Oswald', sans-serif;
+        }
+    }
+}
+.contein-trayectoria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .carro{
+        width: 60%;
+        height: 50%;
+    }
+}
+.contein_completo{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .contenedor_info {
+        width: 40%;
+        font-family: 'Asap', sans-serif;
+        font-size: 20px;
+        padding: 20px;
+    } 
+}
+

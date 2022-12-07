@@ -1,0 +1,81 @@
+footer{
+    background-color: #363839;
+    .contenedor-footer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 250px;
+        .logopag{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            font-size: 15px;
+            color: #DDDDDD;
+            a{
+                width: 350px;
+                height: 123px;
+                img{
+                    width: 80%;
+                    height: 80%;
+                }
+            }
+            h5{
+                margin-bottom: 0;
+                font-family: 'Asap';
+            }
+        }
+        .enlacefoot{
+            ul{
+                height: 100%;
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                li{
+                    a{
+                        text-decoration: none;
+                        font-size: 18px;
+                        color: #DDDDDD;
+                        font-family: 'Asap';
+                    }
+                }
+                p{
+                    color: #DDDDDD;
+                    margin-bottom: 0;
+                    line-height: 20px;
+                    font-family: 'Asap';
+                }
+            }
+        }
+        .redes{
+            width: 150px;
+            height: 160px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            margin: 30px;
+            a{
+                img{
+                    margin: 8px;
+                    width: 80%;
+                    height: 80%;
+                }
+            }
+        }
+    }
+    .COPYRIGHT {
+        width: 100%;
+        height: 50px;
+        background-color: #282a2b;
+        color: #DDDDDD;
+        font-size: small;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            margin-bottom: 0;
+        }
+    }
+}

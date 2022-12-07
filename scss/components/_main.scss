@@ -1,0 +1,196 @@
+.hero{
+    text-align: center;
+    width: 100%;
+    height: 65vh;
+    background-image: url(../img/pexels-tim-mossholder-974314.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    .textfrase{
+        width: 300px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: 100px;
+        margin-bottom: 20px;
+        h2{
+            color: #393E41;
+            font-size: 40px;
+            font-weight: 300;
+            font-style: italic;
+        }
+    }
+}
+.frasegiga{
+    width: 100%;
+    height: 170px;
+    background: rgb(6, 168, 96);
+    background: radial-gradient(circle, rgba(6, 168, 96, 1) 0%, rgba(87, 140, 88, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    h2{
+        font-family: 'Oswald', sans-serif;
+        font-style: normal;
+        font-size: 35px;
+    }
+}
+.modulos{
+    h2{
+        width: 100%;
+        height: 200px;
+        text-align: center;
+        background-color: white;
+        color: #333333;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Oswald';
+        font-weight: bolder;
+        font-size: 35px;
+    }
+    .modulos-contenedor{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        div{
+            width: 150px;
+            height: 200px;
+            text-align: center;
+            margin: 15px;
+            a{
+                text-decoration: none;
+                color: white;
+                background-color: rgba(0, 0, 0, 0.22);
+                padding: 6px;
+                border-radius: 15px 15px;
+                margin-top: 5px;
+            }
+            h3{
+                margin-bottom: 10px;
+                font-family: 'Oswald';
+                font-size: 24px;
+            }
+            img{
+                width: 88px;
+                height: 80px;
+            }
+        }
+        .achica{
+            img{
+                width: 75px;
+                height: 80px;
+            }
+        }
+    }
+}
+.proveedores-grid{
+    background-color: #f2f2f2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px 1fr 1fr;
+    grid-template-areas:
+        "hache hache"
+        "imagenes imagenes"
+        "parrafo parrafo"
+    ;
+    .hache{
+        width: 100%;
+        height: 100px;
+        grid-area: hache;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2{
+            font-family: 'Oswald';
+            font-size: 35px;
+        }
+    }
+    .proveedores-contenedor{
+        width: 100%;
+        height: 100%;
+        grid-area: imagenes;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        .imaggen2{
+            width: 400px;
+            height: 271px;
+            margin-bottom: 20px;
+        }
+        .fontmass{
+            width: 20%;
+            width: 300px;
+            height: 100px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            font-family: 'Asap';
+            font-size: 20px;
+            color: #747474;
+        }
+    }
+    .textprove{
+        grid-area: parrafo;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        .imagen2{
+            width: 400px;
+            height: 400px;
+        }
+        .fontmass{
+            width: 20%;
+        width: 300px;
+        height: 100px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        font-family: 'Asap';
+        font-size: 20px;
+        color: #747474;
+        }
+    }
+}
+.partedeabajo{
+    position: fixed;
+    bottom: 1.5%;
+    right: 1%;
+    background-color: #1C2321;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 100%;
+    color: white;
+    div{
+        margin-top: 30px;
+        h5{
+            font-size: 12px;
+            margin-bottom: 0px;
+        }
+        h6{
+            a{
+                color: rgb(26, 212, 35);
+                font-size: 10px;
+            }
+        }
+    }
+}
