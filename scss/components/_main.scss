@@ -4,7 +4,7 @@
     text-align: center;
     width: 100%;
     height: 65vh;
-    background-image: url(../img/pexels-tim-mossholder-974314.jpg);
+    background-image: url(../img/pexels-tim-mossholder-9743142.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,6 +22,9 @@
         align-items: flex-start;
         margin-left: 100px;
         margin-bottom: 20px;
+        h1{
+            display: none;
+        }
         h2{
             color: #393E41;
             font-size: 40px;
