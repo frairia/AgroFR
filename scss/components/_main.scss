@@ -48,6 +48,7 @@
         font-family: nth($fuentes, 2), sans-serif;
         font-style: normal;
         font-size: 35px;
+        padding: 10px;
     }
 }
 .modulos{
@@ -78,9 +79,10 @@
                 text-decoration: none;
                 color: white;
                 background-color: rgba(0, 0, 0, 0.22);
-                padding: 6px;
+                padding: 8px;
                 border-radius: 15px 15px;
                 margin-top: 5px;
+                font-size: 12px;
             }
             h3{
                 margin-bottom: 10px;

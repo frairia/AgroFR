@@ -3,13 +3,13 @@
 section{
     .heroequipo{
         width: 100%;
-        height: 222px;
-        background-image: url(../img/head-flota.jpg);
+        height: 322px;
+        background-image: url(../img/head-flota2.jpg);
         background-attachment: local;
         h3{
             width: 100%;
-            height: 100%;
-            @include flex (flex, center, center);
+            height: 70%;
+            @include flex (flex, center, end);
             font-size: 30px;
             font-family: nth($fuentes, 2);
             font-weight: 100;
