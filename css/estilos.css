@@ -41,7 +41,7 @@ header nav {
         border-radius: 10px;
         text-transform: uppercase;
         text-decoration: none;
-        font-family: 'Oswald', sans-serif; }
+        font-family: "Oswald", sans-serif; }
         header nav ul li a:hover, header nav ul li a :active {
           background-color: #578c58;
           transition: 1.5s;
@@ -59,7 +59,7 @@ section .heroservicio {
     justify-content: center;
     align-items: center;
     font-size: 30px;
-    font-family: 'Oswald';
+    font-family: "Oswald";
     font-weight: 100;
     color: white;
     text-transform: uppercase;
@@ -79,7 +79,7 @@ section .heroservicio {
     .productos-contenedor .top h4 {
       margin-left: 50px;
       width: 100%;
-      font-family: 'Oswald', sans-serif;
+      font-family: "Oswald", sans-serif;
       line-height: 1.5; }
   .productos-contenedor .productos {
     grid-area: productos;
@@ -137,24 +137,24 @@ section .heroservicio {
     .productos-contenedor .top2 h4 {
       margin-left: 50px;
       width: 100%;
-      font-family: 'Oswald', sans-serif;
+      font-family: "Oswald", sans-serif;
       line-height: 1.5; }
   .productos-contenedor .descripcion {
     grid-area: descripcion;
     display: flex; }
     .productos-contenedor .descripcion .descripcion2 {
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
       text-align: center;
       background-color: #f2f2f2;
       padding-left: 30px; }
       .productos-contenedor .descripcion .descripcion2 h4 {
-        font-family: 'Oswald', sans-serif;
+        font-family: "Oswald", sans-serif;
         font-size: 40px; }
       .productos-contenedor .descripcion .descripcion2 p {
-        font-family: 'Asap', sans-serif;
+        font-family: "Asap", sans-serif;
         font-size: 20px; }
     .productos-contenedor .descripcion .sima {
       width: 100%;
@@ -176,7 +176,7 @@ section .heroequipo {
     justify-content: center;
     align-items: center;
     font-size: 30px;
-    font-family: 'Oswald';
+    font-family: "Oswald";
     font-weight: 100;
     color: white;
     text-transform: uppercase;
@@ -199,7 +199,7 @@ section .heroequipo {
         box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
         transform: translateY(-3%); }
       .equipo .tractorr .transit .fon {
-        font-family: 'Asap', sans-serif; }
+        font-family: "Asap", sans-serif; }
   .equipo .operarios {
     grid-area: operarios;
     display: flex;
@@ -207,7 +207,7 @@ section .heroequipo {
     align-items: center;
     background-image: url(../img/head-laempresa.jpg);
     text-transform: uppercase;
-    font-family: 'Oswald', sans-serif; }
+    font-family: "Oswald", sans-serif; }
     .equipo .operarios .fas {
       font-size: 2em; }
   .equipo .fumigadora {
@@ -222,16 +222,16 @@ section .heroequipo {
         box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
         transform: translateY(-3%); }
     .equipo .fumigadora .card-body .fon {
-      font-family: 'Asap', sans-serif; }
+      font-family: "Asap", sans-serif; }
   .equipo .entre {
     grid-area: entre;
     background-image: url(../img/head-laempresa.jpg);
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: 'Oswald', sans-serif; }
+    font-family: "Oswald", sans-serif; }
     .equipo .entre .fon2 {
-      font-family: 'Oswald', sans-serif; }
+      font-family: "Oswald", sans-serif; }
     .equipo .entre .fas {
       font-size: 2em; }
   .equipo .targeta-cosechadora {
@@ -253,7 +253,7 @@ section .heroequipo {
       .equipo .targeta-cosechadora .primera3 .paddi {
         margin-bottom: 20px; }
       .equipo .targeta-cosechadora .primera3 .fon {
-        font-family: 'Asap', sans-serif; }
+        font-family: "Asap", sans-serif; }
     .equipo .targeta-cosechadora .segunda3 {
       display: flex;
       justify-content: space-around;
@@ -268,7 +268,7 @@ section .heroequipo {
       .equipo .targeta-cosechadora .segunda3 .paddi {
         margin-bottom: 20px; }
       .equipo .targeta-cosechadora .segunda3 .fon {
-        font-family: 'Asap', sans-serif; }
+        font-family: "Asap", sans-serif; }
 
 section .herotrayectoria {
   width: 100%;
@@ -282,7 +282,7 @@ section .herotrayectoria {
     justify-content: center;
     align-items: center;
     font-size: 30px;
-    font-family: 'Oswald';
+    font-family: "Oswald";
     font-weight: 100;
     color: white;
     text-transform: uppercase;
@@ -294,9 +294,9 @@ section .herotrayectoria {
   display: flex;
   justify-content: center; }
   .sectitra .herotraye h3 {
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     line-height: 1.5;
-    font-family: 'Oswald', sans-serif; }
+    font-family: "Oswald", sans-serif; }
 
 .contein-trayectoria {
   display: flex;
@@ -313,7 +313,7 @@ section .herotrayectoria {
   justify-content: center; }
   .contein_completo .contenedor_info {
     width: 40%;
-    font-family: 'Asap', sans-serif;
+    font-family: "Asap", sans-serif;
     font-size: 20px;
     padding: 20px; }
 
@@ -329,7 +329,7 @@ section .herocontacto {
     justify-content: center;
     align-items: center;
     font-size: 30px;
-    font-family: 'Oswald';
+    font-family: "Oswald";
     font-weight: 100;
     color: white;
     text-transform: uppercase;
@@ -344,12 +344,12 @@ section .herocontacto {
     grid-area: head-cont;
     border-bottom: 1px solid black;
     display: flex;
-    align-items: center;
     justify-content: flex-start;
+    align-items: center;
     background-color: #f2f2f2; }
     .contain-contactos .head-cont h4 {
       width: 100%;
-      font-family: 'Oswald', sans-serif;
+      font-family: "Oswald", sans-serif;
       line-height: 1.5;
       display: flex;
       justify-content: center;
@@ -359,8 +359,8 @@ section .herocontacto {
     grid-area: text-cont;
     background-color: #f2f2f2;
     display: flex;
-    align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    align-items: center; }
     .contain-contactos .text-cont .text-56 {
       width: 50%;
       height: 100%;
@@ -369,18 +369,18 @@ section .herocontacto {
       justify-content: center;
       margin: auto; }
       .contain-contactos .text-cont .text-56 h5 {
-        font-family: 'Asap', sans-serif;
+        font-family: "Asap", sans-serif;
         font-weight: 700; }
       .contain-contactos .text-cont .text-56 h6 {
         color: #6a6a6a;
-        font-family: 'Asap', sans-serif;
+        font-family: "Asap", sans-serif;
         font-weight: 400; }
   .contain-contactos .form-cont {
     grid-area: form-cont;
     background-color: #f2f2f2;
     display: flex;
-    align-items: center;
-    justify-content: flex-start; }
+    justify-content: flex-start;
+    align-items: center; }
     .contain-contactos .form-cont .form {
       background-color: white;
       width: 90%;
@@ -494,7 +494,7 @@ section .herocontacto {
   color: white;
   text-align: center; }
   .frasegiga h2 {
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     font-style: normal;
     font-size: 35px; }
 
@@ -508,7 +508,7 @@ section .herocontacto {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Oswald';
+  font-family: "Oswald";
   font-weight: bolder;
   font-size: 35px; }
 
@@ -530,7 +530,7 @@ section .herocontacto {
       margin-top: 5px; }
     .modulos .modulos-contenedor div h3 {
       margin-bottom: 10px;
-      font-family: 'Oswald';
+      font-family: "Oswald";
       font-size: 24px; }
     .modulos .modulos-contenedor div img {
       width: 88px;
@@ -553,7 +553,7 @@ section .herocontacto {
     justify-content: center;
     align-items: center; }
     .proveedores-grid .hache h2 {
-      font-family: 'Oswald';
+      font-family: "Oswald";
       font-size: 35px; }
   .proveedores-grid .proveedores-contenedor {
     width: 100%;
@@ -575,7 +575,7 @@ section .herocontacto {
       text-align: center;
       display: flex;
       align-items: center;
-      font-family: 'Asap';
+      font-family: "Asap";
       font-size: 20px;
       color: #747474; }
   .proveedores-grid .textprove {
@@ -597,7 +597,7 @@ section .herocontacto {
       text-align: center;
       display: flex;
       align-items: center;
-      font-family: 'Asap';
+      font-family: "Asap";
       font-size: 20px;
       color: #747474; }
 
@@ -644,7 +644,7 @@ footer {
           height: 80%; }
       footer .contenedor-footer .logopag h5 {
         margin-bottom: 0;
-        font-family: 'Asap'; }
+        font-family: "Asap"; }
     footer .contenedor-footer .enlacefoot ul {
       height: 100%;
       list-style: none;
@@ -655,12 +655,12 @@ footer {
         text-decoration: none;
         font-size: 18px;
         color: #DDDDDD;
-        font-family: 'Asap'; }
+        font-family: "Asap"; }
       footer .contenedor-footer .enlacefoot ul p {
         color: #DDDDDD;
         margin-bottom: 0;
         line-height: 20px;
-        font-family: 'Asap'; }
+        font-family: "Asap"; }
     footer .contenedor-footer .redes {
       width: 150px;
       height: 160px;
@@ -824,7 +824,7 @@ footer {
     justify-content: center; }
     .ola .contein_completo .contenedor_info {
       width: 40%;
-      font-family: 'Asap', sans-serif;
+      font-family: "Asap", sans-serif;
       font-size: 20px;
       padding: 20px; } }
 

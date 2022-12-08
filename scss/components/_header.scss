@@ -1,3 +1,5 @@
+@import "../base/variables";
+
 header{
     .ali{
         position: sticky;
@@ -40,7 +42,7 @@ header{
                     border-radius: 10px;
                     text-transform: uppercase;
                     text-decoration: none;
-                    font-family: 'Oswald', sans-serif;
+                    font-family: nth($fuentes, 2), sans-serif;
                     &:hover,:active {
                         background-color: rgba(87, 140, 88, 1);
                         transition: 1.5s;

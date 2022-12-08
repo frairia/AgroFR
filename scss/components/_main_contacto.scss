@@ -1,3 +1,5 @@
+@import "../base/variables";
+
 section{
     .herocontacto{
         width: 100%;
@@ -7,11 +9,9 @@ section{
         h3{
             width: 100%;
             height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex (flex, center, center);
             font-size: 30px;
-            font-family: 'Oswald';
+            font-family: nth($fuentes, 2);
             font-weight: 100;
             color: white;
             text-transform: uppercase;
@@ -30,26 +30,20 @@ section{
     .head-cont{
         grid-area: head-cont;
         border-bottom: 1px solid rgb(0, 0, 0);
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        background-color: #f2f2f2;
+        @include flex (flex, flex-start, center);
+        background-color: $color-fondo;
         h4{
             width: 100%;
-            font-family: 'Oswald', sans-serif;
+            font-family: nth($fuentes, 2), sans-serif;
             line-height: 1.5;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex (flex, center, center);
             text-align: center;
         }
     }
     .text-cont{
         grid-area: text-cont;
-        background-color: #f2f2f2;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        background-color: $color-fondo;
+        @include flex (flex, center, center);
         .text-56{
             width: 50%;
             height: 100%;
@@ -58,22 +52,20 @@ section{
             justify-content: center;
             margin: auto;
             h5{
-                font-family: 'Asap', sans-serif;
+                font-family: nth($fuentes, 1), sans-serif;
                 font-weight: 700;
             }
             h6{
                 color: #6a6a6a;
-                font-family: 'Asap', sans-serif;
+                font-family: nth($fuentes, 1), sans-serif;
                 font-weight: 400;
             }
         }
     }
     .form-cont{
         grid-area: form-cont;
-        background-color: #f2f2f2;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
+        background-color: $color-fondo;
+        @include flex (flex, flex-start, center);
         .form{
             background-color: white;
             width: 90%;

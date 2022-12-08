@@ -1,9 +1,9 @@
+@import "../base/variables" ;
+
 footer{
-    background-color: #363839;
+    background-color: nth($colores-footer, 1);
     .contenedor-footer{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        @include flex (flex, space-around, center);
         width: 100%;
         height: 250px;
         .logopag{
@@ -12,7 +12,7 @@ footer{
             justify-content: center;
             align-items: flex-start;
             font-size: 15px;
-            color: #DDDDDD;
+            color: nth($colores-footer, 3);
             a{
                 width: 350px;
                 height: 123px;
@@ -23,7 +23,7 @@ footer{
             }
             h5{
                 margin-bottom: 0;
-                font-family: 'Asap';
+                font-family: nth($fuentes, 1);
             }
         }
         .enlacefoot{
@@ -37,24 +37,22 @@ footer{
                     a{
                         text-decoration: none;
                         font-size: 18px;
-                        color: #DDDDDD;
-                        font-family: 'Asap';
+                        color: nth($colores-footer, 3);
+                        font-family: nth($fuentes, 1);
                     }
                 }
                 p{
-                    color: #DDDDDD;
+                    color: nth($colores-footer, 3);
                     margin-bottom: 0;
                     line-height: 20px;
-                    font-family: 'Asap';
+                    font-family: nth($fuentes, 1);
                 }
             }
         }
         .redes{
             width: 150px;
             height: 160px;
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
+            @include flex (flex, center, flex-end);
             margin: 30px;
             a{
                 img{
@@ -68,8 +66,8 @@ footer{
     .COPYRIGHT {
         width: 100%;
         height: 50px;
-        background-color: #282a2b;
-        color: #DDDDDD;
+        background-color: nth($colores-footer, 2);
+        color: nth($colores-footer, 3);
         font-size: small;
         display: flex;
         justify-content: center;

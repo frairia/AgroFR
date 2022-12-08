@@ -1,0 +1,25 @@
+
+//* Variables
+
+$color-fondo: #f2f2f2;
+
+//! Listas
+
+$colores-footer:
+#363839,
+#282a2b,
+#DDDDDD;
+
+$fuentes:
+'Asap',
+'Oswald';
+
+//! Mixin
+
+@mixin flex ($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+
