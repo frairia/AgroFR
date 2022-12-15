@@ -709,6 +709,9 @@ footer {
     .productos-contenedor .productos .contain {
       flex-direction: column;
       width: 400px; }
+      .productos-contenedor .productos .contain .tarjeta {
+        margin: 0;
+        margin-top: 20px; }
     .productos-contenedor .descripcion {
       flex-direction: column; }
       .productos-contenedor .descripcion .descripcion2 {
@@ -879,8 +882,7 @@ footer {
   header nav .enlacee {
     padding: 20px 20px; }
   .productos-contenedor .productos .contain {
-    width: 350px;
-    padding: 50px; } }
+    width: 350px; } }
 
 @media (max-width: 425px) {
   .form-cont .form .form_title {
