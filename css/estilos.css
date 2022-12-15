@@ -313,10 +313,20 @@ section .herotrayectoria {
   flex-direction: row;
   justify-content: center; }
   .contein_completo .contenedor_info {
-    width: 40%;
+    width: 30%;
     font-family: "Asap", sans-serif;
     font-size: 20px;
     padding: 20px; }
+
+.mantecol {
+  width: 100%; }
+  .mantecol .iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .mantecol .iframe img {
+      width: 75%; }
 
 section .herocontacto {
   width: 100%;
@@ -834,7 +844,9 @@ footer {
       width: 40%;
       font-family: "Asap", sans-serif;
       font-size: 20px;
-      padding: 20px; } }
+      padding: 20px; }
+  .mantecol {
+    display: none; } }
 
 @media screen and (max-width: 668px) {
   .equipo .targeta-cosechadora {

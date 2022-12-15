@@ -46,10 +46,23 @@ section{
     flex-direction: row;
     justify-content: center;
     .contenedor_info {
-        width: 40%;
+        width: 30%;
         font-family: nth($fuentes, 1), sans-serif;
         font-size: 20px;
         padding: 20px;
     } 
 }
+.mantecol{
+    width: 100%;
+    .iframe{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        img{
+            width: 75%;
+        }
+    }
+}
+
 
