@@ -210,6 +210,8 @@ section .heroequipo {
     font-family: "Oswald", sans-serif; }
     .equipo .operarios .fas {
       font-size: 2em; }
+    .equipo .operarios h2 {
+      color: white; }
   .equipo .fumigadora {
     grid-area: fumigadora;
     display: flex;
@@ -234,6 +236,8 @@ section .heroequipo {
       font-family: "Oswald", sans-serif; }
     .equipo .entre .fas {
       font-size: 2em; }
+    .equipo .entre h2 {
+      color: white; }
   .equipo .targeta-cosechadora {
     grid-area: cosechadora;
     padding: 30px;
