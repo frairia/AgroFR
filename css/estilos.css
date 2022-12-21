@@ -323,14 +323,21 @@ section .herotrayectoria {
     padding: 20px; }
 
 .mantecol {
-  width: 100%; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px; }
   .mantecol .iframe {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; }
-    .mantecol .iframe img {
-      width: 75%; }
+    flex-direction: row;
+    width: 80%; }
+    .mantecol .iframe p {
+      font-size: 20px; }
+      .mantecol .iframe p .sist {
+        color: blue;
+        font-size: 22px; }
 
 section .herocontacto {
   width: 100%;
@@ -845,15 +852,18 @@ footer {
   .ola .contein_completo {
     width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: center; }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
     .ola .contein_completo .contenedor_info {
-      width: 40%;
+      width: 80%;
       font-family: "Asap", sans-serif;
       font-size: 20px;
       padding: 20px; }
-  .mantecol {
-    display: none; } }
+  .mantecol .iframe {
+    flex-direction: column; }
+    .mantecol .iframe img {
+      margin-bottom: 20px; } }
 
 @media screen and (max-width: 668px) {
   .equipo .targeta-cosechadora {
