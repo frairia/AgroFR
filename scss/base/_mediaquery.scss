@@ -58,7 +58,7 @@
     .proveedores-grid {
         grid-template-columns: 1fr;
         grid-template-rows: 100px 0.8fr 1fr;
-        grid-area:
+        grid-template-areas:
             "hache"
             "imagenes"
             "parrafo"
@@ -72,7 +72,7 @@
             flex-direction: column;
             .fontmass {
                 width: 70%;
-                height: 200px;
+                height: 250px;
                 text-align: center;
             }
         }

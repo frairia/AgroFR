@@ -549,18 +549,18 @@ section .herocontacto {
       font-family: "Oswald";
       font-size: 24px; }
     .modulos .modulos-contenedor div img {
-      width: 88px;
-      height: 80px; }
+      width: 100px;
+      height: 90px; }
   .modulos .modulos-contenedor .achica img {
     width: 75px;
-    height: 80px; }
+    height: 90px; }
 
 .proveedores-grid {
   background-color: #f2f2f2;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 100px 1fr 1fr;
-  grid-template-areas: "hache hache" "imagenes imagenes" "parrafo parrafo"; }
+  grid-template-rows: 100px 1fr;
+  grid-template-areas: "hache hache" "imagenes parrafo"; }
   .proveedores-grid .hache {
     width: 100%;
     height: 100px;
@@ -576,7 +576,7 @@ section .herocontacto {
     height: 100%;
     grid-area: imagenes;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 20px; }
@@ -587,7 +587,7 @@ section .herocontacto {
     .proveedores-grid .proveedores-contenedor .fontmass {
       width: 20%;
       width: 300px;
-      height: 100px;
+      height: 250px;
       text-align: center;
       display: flex;
       align-items: center;
@@ -599,7 +599,7 @@ section .herocontacto {
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 20px; }
@@ -609,7 +609,7 @@ section .herocontacto {
     .proveedores-grid .textprove .fontmass {
       width: 20%;
       width: 300px;
-      height: 100px;
+      height: 250px;
       text-align: center;
       display: flex;
       align-items: center;
@@ -733,7 +733,7 @@ footer {
   .proveedores-grid {
     grid-template-columns: 1fr;
     grid-template-rows: 100px 0.8fr 1fr;
-    grid-area: "hache" "imagenes" "parrafo"; }
+    grid-template-areas: "hache" "imagenes" "parrafo"; }
     .proveedores-grid .proveedores-contenedor {
       display: flex;
       flex-direction: column; }
@@ -742,7 +742,7 @@ footer {
       flex-direction: column; }
       .proveedores-grid .textprove .fontmass {
         width: 70%;
-        height: 200px;
+        height: 250px;
         text-align: center; }
   .equipo {
     grid-template-columns: repeat(3, 1fr);
